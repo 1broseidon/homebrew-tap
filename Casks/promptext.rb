@@ -36,22 +36,22 @@ cask "promptext" do
   on_macos do
     on_intel do
       url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_Darwin_x86_64.tar.gz"
-      sha256 "51ff5e9fea26d3acd062a2a742aedad332f907b8c89b8802103f318d42a05e89"
+      sha256 "891f013071237bbca4bfc59e58a7593d87fef8e69fd2a946aa66cfc503386435"
     end
     on_arm do
       url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_Darwin_arm64.tar.gz"
-      sha256 "d8034cc92d1ccdf9de15f3d939514bdda7ca689f85e93ca3934cff4f2ea3f210"
+      sha256 "2775b876289062ca3fc73f521efd22df3254e7529db30b0561091f23ae03179c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_Linux_x86_64.tar.gz"
-      sha256 "b252a9c49aef201be45907c4431a5416789dd8a6b6815be6bd4078fe41f140fc"
+      sha256 "f0719a719fec5b46ed7ca11cf2c99654074f2c338c80151d7eb6557828ba765a"
     end
     on_arm do
       url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_Linux_arm64.tar.gz"
-      sha256 "5d8ddcb99baed03122ea1826404cc7d7716a8096e830f336aeb96cdcc06d7b50"
+      sha256 "847d324c7484bb70c418d7e012c5e23d73482f3301019522c96cd31f04192a44"
     end
   end
 
