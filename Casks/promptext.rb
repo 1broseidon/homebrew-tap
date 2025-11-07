@@ -3,33 +3,33 @@ cask "promptext" do
   name "promptext"
   desc "Smart code context extractor for AI assistants"
   homepage "https://github.com/1broseidon/promptext"
-  version "0.5.3"
+  version "0.5.4"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "prx"
+  binary "promptext"
 
   on_macos do
     on_intel do
-      url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_#{version}_darwin_amd64.tar.gz"
-      sha256 "0145efae8a4b6d8eefe9ea65b15c0047fdaaa00a0005ffd3495e5a7d6bb141e3"
+      url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_Darwin_x86_64.tar.gz"
+      sha256 "666e7d11a8c9f0d3fe7308dfe7ba34cb8f711f910687a814652e68a1674b9067"
     end
     on_arm do
-      url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_#{version}_darwin_arm64.tar.gz"
-      sha256 "645e4b6217e2213148d161507e1f6e4d1c8f1b5c10e19329c586a8db8de7696b"
+      url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_Darwin_arm64.tar.gz"
+      sha256 "5a40bc7b2772893498ced80b0306c3db6b7d667a210147546f43f12108be9d13"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_#{version}_linux_amd64.tar.gz"
-      sha256 "b04215ef13878f2e91ed0b169963fc469710da8f46d923d1829d74e1de95dc0e"
+      url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_Linux_x86_64.tar.gz"
+      sha256 "789addd7a4ded7c01d7a230622e93c847bcc2ffbc5b98edba73f11f99619207b"
     end
     on_arm do
-      url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_#{version}_linux_arm64.tar.gz"
-      sha256 "26cbec8fef25a72b87761bd27ab3d6612988b10fd152389a78bbb8d2b21cd822"
+      url "https://github.com/1broseidon/promptext/releases/download/v#{version}/promptext_Linux_arm64.tar.gz"
+      sha256 "85d7c0e3cbb93114454f15faf14be35eeac3d95938516b3ba17fa753a3185433"
     end
   end
 
