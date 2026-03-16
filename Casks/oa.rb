@@ -3,7 +3,7 @@ cask "oa" do
   name "oa"
   desc "Config-driven multi-agent CLI with a normalized interface"
   homepage "https://github.com/1broseidon/oneagent"
-  version "0.10.0"
+  version "0.10.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "oa" do
     on_intel do
       url "https://github.com/1broseidon/oneagent/releases/download/v#{version}/oa_#{version}_darwin_x86_64.tar.gz",
         verified: "github.com/1broseidon/oneagent/"
-      sha256 "665451237a5192f18d70ad725f2dc5b06948447a5b0437a4879bc064e3b241f4"
+      sha256 "110f448fe2e6be4ee74c5ae4d82a8d6136e2aa6222d92ae469164e6397b93d80"
     end
     on_arm do
       url "https://github.com/1broseidon/oneagent/releases/download/v#{version}/oa_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/1broseidon/oneagent/"
-      sha256 "d2f1b12288dcf6ea886e6451b7f23c5fda67de501d2d39c1a81046b142d6c033"
+      sha256 "1c8f5498339d0244dc512d74413dd09c7da881c3a2be43766e1ac7dfbd02a2d1"
     end
   end
 
@@ -28,12 +28,12 @@ cask "oa" do
     on_intel do
       url "https://github.com/1broseidon/oneagent/releases/download/v#{version}/oa_#{version}_linux_x86_64.tar.gz",
         verified: "github.com/1broseidon/oneagent/"
-      sha256 "5e9be0c0b2200cc327d9f6a67ffa869bd38fbf17106f2f1dba4be76c8f5845fd"
+      sha256 "ed2ea628eb9692c2e8da6ce910fa3c376ec2b9238d62e2c577f1b355eca083f1"
     end
     on_arm do
       url "https://github.com/1broseidon/oneagent/releases/download/v#{version}/oa_#{version}_linux_arm64.tar.gz",
         verified: "github.com/1broseidon/oneagent/"
-      sha256 "fe2dfd38b996cec9a3d6ba6e17364383882c29e3aa17d8cc8a74b64162ccfe3a"
+      sha256 "3bcbf5f08966f112ba801c334392bfd5fd3b666b4e8aa7c9346dd48910347495"
     end
   end
 
