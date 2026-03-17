@@ -5,13 +5,13 @@
 class Promptext < Formula
   desc "Smart code context extractor for AI assistants"
   homepage "https://promptext.sh"
-  version "0.7.4"
+  version "0.7.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/1broseidon/promptext/releases/download/v0.7.4/promptext_Darwin_x86_64.tar.gz"
-      sha256 "23e3a6eaf0316ea90df9995c6379c2b3ec2815d543cdd5d483ed6d5f109ea2d7"
+      url "https://github.com/1broseidon/promptext/releases/download/v0.7.5/promptext_Darwin_x86_64.tar.gz"
+      sha256 "ff8d98d1903c57c39b70ffa06bd0ffc47b7f2675b18077a8ca0dca3b6c293347"
 
       define_method(:install) do
         bin.install "promptext"
@@ -19,8 +19,8 @@ class Promptext < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/1broseidon/promptext/releases/download/v0.7.4/promptext_Darwin_arm64.tar.gz"
-      sha256 "cb7f03d9a14f1a14e6ab717a39bf79dc5f25403c6e5b4dca9095fe938f1623e1"
+      url "https://github.com/1broseidon/promptext/releases/download/v0.7.5/promptext_Darwin_arm64.tar.gz"
+      sha256 "31ad3c7ad41f4d997f01efa2be7d33f8bbc63a3197102f0ef00ecf6b6fb9002c"
 
       define_method(:install) do
         bin.install "promptext"
@@ -31,16 +31,16 @@ class Promptext < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/promptext/releases/download/v0.7.4/promptext_Linux_x86_64.tar.gz"
-      sha256 "6578a8a7e7f5bf184ed54162a2efa78a74163858c937cfa7efbfa4bf344c03e1"
+      url "https://github.com/1broseidon/promptext/releases/download/v0.7.5/promptext_Linux_x86_64.tar.gz"
+      sha256 "74d65af2f3d587fed398bb325165477031012333b860283c0d584e4618c613c1"
       define_method(:install) do
         bin.install "promptext"
         bin.install_symlink "promptext" => "prx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/promptext/releases/download/v0.7.4/promptext_Linux_arm64.tar.gz"
-      sha256 "4125e77d310dc6cf85b6810b7197e5929778b058309b376148d74eb89f597078"
+      url "https://github.com/1broseidon/promptext/releases/download/v0.7.5/promptext_Linux_arm64.tar.gz"
+      sha256 "6f44d6614d1c6be32ba31b8e85fa28a628bdc67bb1c597910e3dad2078420eef"
       define_method(:install) do
         bin.install "promptext"
         bin.install_symlink "promptext" => "prx"
