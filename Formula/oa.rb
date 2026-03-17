@@ -5,21 +5,21 @@
 class Oa < Formula
   desc "Config-driven multi-agent CLI with a normalized interface"
   homepage "https://github.com/1broseidon/oneagent"
-  version "0.10.5"
+  version "0.10.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/1broseidon/oneagent/releases/download/v0.10.5/oa_0.10.5_darwin_x86_64.tar.gz"
-      sha256 "f9a4b030a5e38f7e19167955fbe9592999a393f1d9e7b226691cd07b47ddd0d6"
+      url "https://github.com/1broseidon/oneagent/releases/download/v0.10.6/oa_0.10.6_darwin_x86_64.tar.gz"
+      sha256 "9946e5e0de2c62c13b119822e79d895104468d1899049e27b6b6902e821a36c0"
 
       define_method(:install) do
         bin.install "oa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/1broseidon/oneagent/releases/download/v0.10.5/oa_0.10.5_darwin_arm64.tar.gz"
-      sha256 "c7017b5c8a8ff51778de4d2042f3c2c5a5cec2b14c20708ffedc2810ff0ec5bc"
+      url "https://github.com/1broseidon/oneagent/releases/download/v0.10.6/oa_0.10.6_darwin_arm64.tar.gz"
+      sha256 "952c13d7f848bb98f2487bb59a735b66e4c58efeb95519c40509cd0568093712"
 
       define_method(:install) do
         bin.install "oa"
@@ -29,15 +29,15 @@ class Oa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/oneagent/releases/download/v0.10.5/oa_0.10.5_linux_x86_64.tar.gz"
-      sha256 "b043f7f731de4e1fa4d5e9a0f1e7b0e00664628c8bf7fbb61fb041aba2d81f34"
+      url "https://github.com/1broseidon/oneagent/releases/download/v0.10.6/oa_0.10.6_linux_x86_64.tar.gz"
+      sha256 "ff47784e2e0e2c9fcd8ae76acb177c001eda4d9de26fdc3aeca68f238b4aa839"
       define_method(:install) do
         bin.install "oa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/oneagent/releases/download/v0.10.5/oa_0.10.5_linux_arm64.tar.gz"
-      sha256 "fa9926ff544f96136475aac73aebae481e983dce1ed461fe39d2a6e03667d1ea"
+      url "https://github.com/1broseidon/oneagent/releases/download/v0.10.6/oa_0.10.6_linux_arm64.tar.gz"
+      sha256 "8da5f281825431d586fe86247613908cd5bb389239d487c57cf8a644a1e08b7d"
       define_method(:install) do
         bin.install "oa"
       end
