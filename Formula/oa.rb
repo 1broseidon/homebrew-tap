@@ -11,7 +11,7 @@ class Oa < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/1broseidon/oneagent/releases/download/v0.12.0/oa_0.12.0_darwin_x86_64.tar.gz"
-      sha256 "3079da51664cd9816cecee59d38e910e562f920e8e5440800f181e24a61ef796"
+      sha256 "d6089b6094fc44cdcb3259eaf44bab4a2f66207152f46d4eb284fdb62b87c910"
 
       define_method(:install) do
         bin.install "oa"
@@ -19,7 +19,7 @@ class Oa < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/1broseidon/oneagent/releases/download/v0.12.0/oa_0.12.0_darwin_arm64.tar.gz"
-      sha256 "5b722ef2ca2dfd15977f6283bc45ab66b9ae6c4edfe6f6eba4587125ce93673f"
+      sha256 "13020962da102b3bd2f0681f65e3f638da7efc6885fcd1c117a7e806b9e897e0"
 
       define_method(:install) do
         bin.install "oa"
@@ -30,14 +30,14 @@ class Oa < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/1broseidon/oneagent/releases/download/v0.12.0/oa_0.12.0_linux_x86_64.tar.gz"
-      sha256 "f182d5d2dd6ab64676d12d09a5767d5b7d125d2fdcc7c285f0fd99fb0a92594f"
+      sha256 "e5e6f12e6d0c4549ee3b271a7e6a49819d4f19f09038855363b539546cae3345"
       define_method(:install) do
         bin.install "oa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/1broseidon/oneagent/releases/download/v0.12.0/oa_0.12.0_linux_arm64.tar.gz"
-      sha256 "da8cb18f9705301b307fc8f8e7ed93f953d28095709ce21eec6dc2181f030e9f"
+      sha256 "a33f5fb676ef5549aef1ef6584d0907931f9622e85ac3c2fa27cf6131c52f3e7"
       define_method(:install) do
         bin.install "oa"
       end
