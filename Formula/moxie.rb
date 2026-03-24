@@ -5,21 +5,21 @@
 class Moxie < Formula
   desc "Chat agent service connecting Telegram and Slack to AI coding agents"
   homepage "https://github.com/1broseidon/moxie"
-  version "0.2.6"
+  version "0.2.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/1broseidon/moxie/releases/download/v0.2.6/moxie_0.2.6_darwin_x86_64.tar.gz"
-      sha256 "adaf84325cc4f64f9f7e0317f439fc7b422d11ad630f74ec5e6315ba00ff057e"
+      url "https://github.com/1broseidon/moxie/releases/download/v0.2.7/moxie_0.2.7_darwin_x86_64.tar.gz"
+      sha256 "511fd5e9379933c4fa2d8265e07b8549e4748711a10522c4034ec73ba16447e8"
 
       define_method(:install) do
         bin.install "moxie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/1broseidon/moxie/releases/download/v0.2.6/moxie_0.2.6_darwin_arm64.tar.gz"
-      sha256 "31f5f5b1a82db1f11bdb67763ea7137abf9ffb35ab9efb09aad6bd029404d1c9"
+      url "https://github.com/1broseidon/moxie/releases/download/v0.2.7/moxie_0.2.7_darwin_arm64.tar.gz"
+      sha256 "51fb8a11f3f21db6c82f625bd30d6d5d3482dd387240756737b12fe117b1e783"
 
       define_method(:install) do
         bin.install "moxie"
@@ -29,15 +29,15 @@ class Moxie < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/moxie/releases/download/v0.2.6/moxie_0.2.6_linux_x86_64.tar.gz"
-      sha256 "1bf587337552b2bad4dc0924f21e7d6384075b7b611dc9dec0c53e640e907122"
+      url "https://github.com/1broseidon/moxie/releases/download/v0.2.7/moxie_0.2.7_linux_x86_64.tar.gz"
+      sha256 "daa9404984c13b57e5da6474a33f89fdcfbdae3015abf9f18e2437d777b7d556"
       define_method(:install) do
         bin.install "moxie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/moxie/releases/download/v0.2.6/moxie_0.2.6_linux_arm64.tar.gz"
-      sha256 "faacae7a09cbbfbdfe96e457fb4321938d428cad58f7fb050327f35454016135"
+      url "https://github.com/1broseidon/moxie/releases/download/v0.2.7/moxie_0.2.7_linux_arm64.tar.gz"
+      sha256 "8abeecb1458bda1ffac3bcf70b62034ad459c1d2df6cdf86d06adb1f6c394cab"
       define_method(:install) do
         bin.install "moxie"
       end
