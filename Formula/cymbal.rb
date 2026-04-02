@@ -10,7 +10,7 @@ class Cymbal < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/1broseidon/cymbal/releases/download/v0.8.1/cymbal_v0.8.1_darwin_arm64.tar.gz"
-      sha256 "c7cfebe88e97d5a388648227df090a1cfdc18748dffb63d65371804cefcb2a90"
+      sha256 "341e4aa558bcd31e4eab0d16403b9b69b46c9104556127eece48121022436e67"
     end
 
     define_method(:install) do
@@ -21,11 +21,11 @@ class Cymbal < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/1broseidon/cymbal/releases/download/v0.8.1/cymbal_v0.8.1_linux_x86_64.tar.gz"
-      sha256 "0c04f7bf7b1ccd54faf6cfcae605c60c6a52b32eff21accecaa5efb0ff96423f"
+      sha256 "5ac34649f316ed481c35eac7fec0a2ff7590d03ccc2bc076b469401ad9ae4d74"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/1broseidon/cymbal/releases/download/v0.8.1/cymbal_v0.8.1_linux_arm64.tar.gz"
-      sha256 "1746a1a53bb64f531966778fde589672ef625d8d4cf46c81857616a1c25b18b8"
+      sha256 "915ba2552619d5bb206315b47ece623038907e532fb2fe1ffe48d90a71261ce5"
     end
 
     define_method(:install) do
