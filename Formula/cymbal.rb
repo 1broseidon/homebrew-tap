@@ -4,13 +4,16 @@
 class Cymbal < Formula
   desc "Fast, language-agnostic code indexer and symbol navigator powered by tree-sitter"
   homepage "https://github.com/1broseidon/cymbal"
-  version "0.8.3"
+  version "0.8.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/1broseidon/cymbal/releases/download/v0.8.3/cymbal_v0.8.3_darwin_arm64.tar.gz"
-      sha256 "448e7ac932ecfdfec3f2727a2a49fe51c7e5ec5d5d3422fbf9a1cf5756591022"
+      url "https://github.com/1broseidon/cymbal/releases/download/v0.8.4/cymbal_v0.8.4_darwin_arm64.tar.gz"
+      sha256 "87ab0cf27e68ba34e844c2b5202c4462ea26a8e718bf8a0264bb02a4877f2f82"
+    elsif Hardware::CPU.intel?
+      url "https://github.com/1broseidon/cymbal/releases/download/v0.8.4/cymbal_v0.8.4_darwin_x86_64.tar.gz"
+      sha256 "40939227bf45d43657c4d25bcaffdfa58a5f9b82def7e4416bcee1fa77cb4f44"
     end
 
     define_method(:install) do
@@ -20,12 +23,11 @@ class Cymbal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/cymbal/releases/download/v0.8.3/cymbal_v0.8.3_linux_x86_64.tar.gz"
-      sha256 "e044bd11afef182895bf56da58c12bc6d4a54fb7b4d22a1a73d19434f503101b"
-    end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/cymbal/releases/download/v0.8.3/cymbal_v0.8.3_linux_arm64.tar.gz"
-      sha256 "f0eb54e22959f24fe46d7cfa86dbfc2a2649623f35e800fa9a0b80fa9a19a02b"
+      url "https://github.com/1broseidon/cymbal/releases/download/v0.8.4/cymbal_v0.8.4_linux_x86_64.tar.gz"
+      sha256 "da416717fb55a4fec0d6545ce8430b67829d1d8a93167196ea9fa484aacad580"
+    elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/1broseidon/cymbal/releases/download/v0.8.4/cymbal_v0.8.4_linux_arm64.tar.gz"
+      sha256 "900d3b6a0be908ebd89e0391dd673138c4c1ea87899d93580562db64a85cfcfd"
     end
 
     define_method(:install) do
