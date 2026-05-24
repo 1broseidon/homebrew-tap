@@ -5,21 +5,21 @@
 class Ketch < Formula
   desc "Fast web search and scrape CLI for agents"
   homepage "https://github.com/1broseidon/ketch"
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/1broseidon/ketch/releases/download/v0.9.1/ketch_0.9.1_darwin_x86_64.tar.gz"
-      sha256 "37aed6c4460c3ed413c5c0901f6e51e0749ed46b974495e72e1e3938773cd328"
+      url "https://github.com/1broseidon/ketch/releases/download/v0.9.2/ketch_0.9.2_darwin_x86_64.tar.gz"
+      sha256 "95a99beb773abb20d2a54d6dc53a130e5f8e4776f1641fd44142fe8306aeebd6"
 
       define_method(:install) do
         bin.install "ketch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/1broseidon/ketch/releases/download/v0.9.1/ketch_0.9.1_darwin_arm64.tar.gz"
-      sha256 "3c1b87c2c3690b2a17e16a3d78b15ec855fa05b789deb01f8936baa54ab62e78"
+      url "https://github.com/1broseidon/ketch/releases/download/v0.9.2/ketch_0.9.2_darwin_arm64.tar.gz"
+      sha256 "20b9393a6c0218672b0a26936c3da3f3ed6a4f66034bcd0528f183dae79e4bfb"
 
       define_method(:install) do
         bin.install "ketch"
@@ -29,15 +29,15 @@ class Ketch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/ketch/releases/download/v0.9.1/ketch_0.9.1_linux_x86_64.tar.gz"
-      sha256 "44070f19eff3a61c39e42fe3fdcd2f686b390bb629dba82ab390814f5ccb2805"
+      url "https://github.com/1broseidon/ketch/releases/download/v0.9.2/ketch_0.9.2_linux_x86_64.tar.gz"
+      sha256 "88a31cb52952a219360aa57c15377aba5d0c612674e268ca58b5a711d4a513cb"
       define_method(:install) do
         bin.install "ketch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/ketch/releases/download/v0.9.1/ketch_0.9.1_linux_arm64.tar.gz"
-      sha256 "cea01417b1653f6e3f35f33cfa1eba81a1c6cf1a4d4975592f908428687608de"
+      url "https://github.com/1broseidon/ketch/releases/download/v0.9.2/ketch_0.9.2_linux_arm64.tar.gz"
+      sha256 "3de51fec85f192eda61027d9b5410fa4191b2adc0339747d32cebd88f2fc40f4"
       define_method(:install) do
         bin.install "ketch"
       end
