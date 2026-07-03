@@ -5,21 +5,21 @@
 class Hotline < Formula
   desc "Messaging channel for Claude Code. Talk to your sessions like texting a friend."
   homepage "https://github.com/1broseidon/hotline"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/1broseidon/hotline/releases/download/v0.1.0/hotline_0.1.0_darwin_x86_64.tar.gz"
-      sha256 "c719b8f0f051d94fd380ac51fe441983fdc4bdc439f2b09ec4f2898a5b21f7d8"
+      url "https://github.com/1broseidon/hotline/releases/download/v0.2.0/hotline_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "3aba0826b062a692ebd31ebb90550e0c8c00aea46962350b7edd074d6c786556"
 
       define_method(:install) do
         bin.install "hotline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/1broseidon/hotline/releases/download/v0.1.0/hotline_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d74781a88d8e1adbff9cc91f48ddcf72bd3c72db593963616cd6a2f812217180"
+      url "https://github.com/1broseidon/hotline/releases/download/v0.2.0/hotline_0.2.0_darwin_arm64.tar.gz"
+      sha256 "19bcd7c5d929bbc371ed72640e993d0db23dd6ecd4846ccb5ad0fd6c20da4d68"
 
       define_method(:install) do
         bin.install "hotline"
@@ -29,15 +29,15 @@ class Hotline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/hotline/releases/download/v0.1.0/hotline_0.1.0_linux_x86_64.tar.gz"
-      sha256 "5a4680b997c63813692a5c7e024ff968347cbfae29afaf0c47268da8a7c11e54"
+      url "https://github.com/1broseidon/hotline/releases/download/v0.2.0/hotline_0.2.0_linux_x86_64.tar.gz"
+      sha256 "f5afcecde55887fe876094abc210a6c3689468195a7b7dadb79b17a1eed81b91"
       define_method(:install) do
         bin.install "hotline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/hotline/releases/download/v0.1.0/hotline_0.1.0_linux_arm64.tar.gz"
-      sha256 "875cb3714f617c2dbb49dc62ed128aec14c2abbb0d6f67ca4581fa574276fb33"
+      url "https://github.com/1broseidon/hotline/releases/download/v0.2.0/hotline_0.2.0_linux_arm64.tar.gz"
+      sha256 "0a9e358e3b116b4448abfc75d461d30923a955496cb9a17b5f569a3fd4db47ee"
       define_method(:install) do
         bin.install "hotline"
       end
