@@ -5,23 +5,23 @@
 class Ghostmux < Formula
   desc "The tmux fleet navigator"
   homepage "https://github.com/1broseidon/ghostmux"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/1broseidon/ghostmux/releases/download/v0.3.0/ghostmux_0.3.0_darwin_x86_64.tar.gz"
-      sha256 "c9dbb340a499650559f8f02621f354b3e6119112a16e642f14cbbf508a3242ad"
+      url "https://github.com/1broseidon/ghostmux/releases/download/v0.3.1/ghostmux_0.3.1_darwin_x86_64.tar.gz"
+      sha256 "72b98e7f3cb740067a02f15692a7f7ba42e4c4e08c8bd5369b18789dc6ad37da"
 
       define_method(:install) do
         bin.install "ghostmux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/1broseidon/ghostmux/releases/download/v0.3.0/ghostmux_0.3.0_darwin_arm64.tar.gz"
-      sha256 "2dd29177615525f84f5494af5ea4cdf97ce3215f2a9a3ed560654bf7b05b192b"
+      url "https://github.com/1broseidon/ghostmux/releases/download/v0.3.1/ghostmux_0.3.1_darwin_arm64.tar.gz"
+      sha256 "7359e385d9952c7fb91d27c39da80dd1d132d06554ada49461d8fa47b6660010"
 
       define_method(:install) do
         bin.install "ghostmux"
@@ -31,15 +31,15 @@ class Ghostmux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/ghostmux/releases/download/v0.3.0/ghostmux_0.3.0_linux_x86_64.tar.gz"
-      sha256 "c9bb09dc58656e3531b4f2de9f7363acbe92ada9647f3064371fbe3fa4030eb2"
+      url "https://github.com/1broseidon/ghostmux/releases/download/v0.3.1/ghostmux_0.3.1_linux_x86_64.tar.gz"
+      sha256 "c59b5dc03c1f05e78d3f200928e625fb4b5e02452c89b18260cba70b9f11bc14"
       define_method(:install) do
         bin.install "ghostmux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/ghostmux/releases/download/v0.3.0/ghostmux_0.3.0_linux_arm64.tar.gz"
-      sha256 "5b00a924db252928643b1a0a0c2dcb2850984a6f2648a7ba3102ef579abbfb8b"
+      url "https://github.com/1broseidon/ghostmux/releases/download/v0.3.1/ghostmux_0.3.1_linux_arm64.tar.gz"
+      sha256 "41a3faa5a1681362b4ba7c6b37f7c4d53d0a791b827a45975bc28fee4f40386c"
       define_method(:install) do
         bin.install "ghostmux"
       end
