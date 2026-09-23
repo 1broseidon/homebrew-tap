@@ -4,16 +4,16 @@
 class Cymbal < Formula
   desc "Fast, language-agnostic code indexer and symbol navigator powered by tree-sitter"
   homepage "https://github.com/1broseidon/cymbal"
-  version "0.16.2"
+  version "0.17.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/1broseidon/cymbal/releases/download/v0.16.2/cymbal_v0.16.2_darwin_arm64.tar.gz"
-      sha256 "fa1fcba309d1a18eadba13f389e0c6ed6fcb0c687a18d8ce5b19a6efaa4a08c2"
+      url "https://github.com/1broseidon/cymbal/releases/download/v0.17.0/cymbal_v0.17.0_darwin_arm64.tar.gz"
+      sha256 "6cedb35c05346d03c4518bda6e2e62c4b33c33e7154a0d367cd05fe62869f73b"
     elsif Hardware::CPU.intel?
-      url "https://github.com/1broseidon/cymbal/releases/download/v0.16.2/cymbal_v0.16.2_darwin_x86_64.tar.gz"
-      sha256 "e9da30dba48a94d9c1981c0b399a66c24cec3415770742e9141a5ced951f7782"
+      url "https://github.com/1broseidon/cymbal/releases/download/v0.17.0/cymbal_v0.17.0_darwin_x86_64.tar.gz"
+      sha256 "e170fbfcb0c2d35bf462f4b1cf7b0165dbf4bacc19dd5591f8ff3cf9af5fe7a3"
     end
 
     define_method(:install) do
@@ -23,11 +23,11 @@ class Cymbal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/cymbal/releases/download/v0.16.2/cymbal_v0.16.2_linux_x86_64.tar.gz"
-      sha256 "f0460354d8b428cbcce0e912488e314c5a86174a6f606ea81ccf721ad8d20a1a"
+      url "https://github.com/1broseidon/cymbal/releases/download/v0.17.0/cymbal_v0.17.0_linux_x86_64.tar.gz"
+      sha256 "e1a5fc4f14a27cef49273dd0ef24ea63ce37f746a798614f26fc05a273e8473f"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1broseidon/cymbal/releases/download/v0.16.2/cymbal_v0.16.2_linux_arm64.tar.gz"
-      sha256 "e58ce703d0ab9f4d71e285570adb33d99b3effce7f685be2af2cb955becb7a9b"
+      url "https://github.com/1broseidon/cymbal/releases/download/v0.17.0/cymbal_v0.17.0_linux_arm64.tar.gz"
+      sha256 "6594c87f19ce044e64e3fe2ebfa761f9be479d4783286fe3e0453dedff2fb1c7"
     end
 
     define_method(:install) do
